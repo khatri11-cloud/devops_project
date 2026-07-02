@@ -7,3 +7,14 @@ Today I initialized the Go module and created the initial project structure. Ins
 - How Go modules work
 - Why production Go projects use `cmd/` and `internal/`
 - How to create a basic HTTP server using Go's standard library
+
+Health endpoints allow orchestration platforms and monitoring tools to verify that an application is running correctly without relying on the main user-facing page.
+
+Version endpoints expose the running application version, making deployments easier to verify and troubleshoot.
+
+I implemented graceful shutdown so the application can terminate cleanly when it receives SIGINT or SIGTERM. Instead of abruptly stopping, the server gets up to five seconds to finish in-flight requests before exiting. This behavior is essential for deployments on platforms like Docker and Kubernetes, where applications are routinely stopped and restarted.
+
+Goroutines – Run the server without blocking the rest of the program.
+Channels – Receive operating system signals.
+Contexts – Give the server up to 5 seconds to finish ongoing work.
+Graceful shutdown – Stop accepting new requests while allowing current requests to complete.
