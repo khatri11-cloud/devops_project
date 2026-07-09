@@ -191,9 +191,13 @@ The documentation is intentionally separated from the application source code to
 
 The implementation process for this project is documented as a three-part engineering blog series.
 
-- **Part 1** – Building a Production-Ready Go Web Service
-- **Part 2** – Containerizing a Go Application with Docker
-- **Part 3** – Deploying a Go Application to Azure with Terraform
+## Engineering Blog Series
+
+This project is documented as a three-part engineering blog series where I explain the design decisions, implementation process, challenges encountered, and lessons learned throughout the project.
+
+- **[Part 1 – Building a Production-Ready Go Web Service](https://prajwalsinghkhatri.com.np/content/posts/project1_cloud-native_go_deployement/part1/)**
+- **[Part 2 – Containerizing a Go Application with Docker](https://prajwalsinghkhatri.com.np/content/posts/project1_cloud-native_go_deployement/part2/)**
+- **[Part 3 – Deploying a Go Application to Azure with Terraform](https://prajwalsinghkhatri.com.np/content/posts/project1_cloud-native_go_deployement/part3/)**
 
 The README provides a technical overview of the repository, while the blog series explains the design decisions, implementation process, challenges encountered, and lessons learned throughout the project.
 
